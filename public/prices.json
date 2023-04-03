@@ -1,12 +1,8 @@
 [
     {
-        "id":1,
+        "id": 1,
         "name": "Basic Membership",
-        "prices": {
-            "monthly": 50,
-            "quarterly": 135,
-            "yearly": 500
-        },
+        "price": 80,
         "features": [
             "Gym access",
             "Locker rooms & showers",
@@ -16,11 +12,7 @@
     {
         "id": 2,
         "name": "Standard Membership",
-        "prices": {
-            "monthly": 75,
-            "quarterly": 200,
-            "yearly": 750
-        },
+        "price": 70,
         "features": [
             "Gym access",
             "Locker rooms & showers",
@@ -31,11 +23,7 @@
     {
         "id": 3,
         "name": "Premium Membership",
-        "prices": {
-            "monthly": 100,
-            "quarterly": 270,
-            "yearly": 1000
-        },
+        "price": 50,
         "features": [
             "Gym access",
             "Locker rooms & showers",

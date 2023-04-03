@@ -9,9 +9,9 @@ const PriceList = () => {
             .then(data => setPrices(data));
     }, [])
     return (
-        <div>
+        <div className='mx-12'>
             <h2 className='text-6xl bg-purple-300 font-bold p-4 text-center text-purple-950'>Awesome Affordable Prices</h2>
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid md:grid-cols-3 gap-4'>
                 {
                     prices.map(price => <PriceCard
                         key={price.id}
