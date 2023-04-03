@@ -1,0 +1,47 @@
+[
+    {
+        "id":1,
+        "name": "Basic Membership",
+        "prices": {
+            "monthly": 50,
+            "quarterly": 135,
+            "yearly": 500
+        },
+        "features": [
+            "Gym access",
+            "Locker rooms & showers",
+            "Group fitness classes"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Standard Membership",
+        "prices": {
+            "monthly": 75,
+            "quarterly": 200,
+            "yearly": 750
+        },
+        "features": [
+            "Gym access",
+            "Locker rooms & showers",
+            "Group fitness classes",
+            "Personal training sessions"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Premium Membership",
+        "prices": {
+            "monthly": 100,
+            "quarterly": 270,
+            "yearly": 1000
+        },
+        "features": [
+            "Gym access",
+            "Locker rooms & showers",
+            "Group fitness classes",
+            "Personal training sessions",
+            "Sauna & pool access"
+        ]
+    }
+]

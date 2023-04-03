@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Link from '../Link/Link';
-import { BeakerIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import LinkRecap from '../Link/LinkRecap';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
-const Navbar = () => {
-    const [open, setOpen] = useState(false);
+const NavbarRecap = () => {
+    const [isOpen, setIsOpen] = useState(false);
     const routes = [
         {
             id: 1,
@@ -31,32 +31,29 @@ const Navbar = () => {
             path: '/services'
         },
     ];
-
     return (
-
-        <nav className='bg-purple-400'>
-            <div className='md:hidden' onClick={() => setOpen(!open)}>
+        <nav>
+            <div className='md:hidden' onClick={() => setIsOpen(!isOpen)}>
                 <span>
                     {
-                        open === true ?
-                            <XMarkIcon className="h-6 w-6 text-purple-500" />
-                            : <Bars3Icon className="h-6 w-6 text-purple-500" />
+                        isOpen === true ?
+                            <XMarkIcon className='h-6 w-6 text-red-400'></XMarkIcon>
+                            : <Bars3Icon className='h-6 w-6 text-black-300'></Bars3Icon>
                     }
                 </span>
 
 
             </div>
-            <ul className={`md:flex absolute md:static duration-500 ${open?'top-6':'-top-36'}`}>
+            <ul className={`md:flex absolute duration-500 md:static bg-slate-300 ${isOpen?'top-6':'-top-36'}`}>
                 {
-                    // routes.map(route => <li>{route.name}</li>)
-                    routes.map(route => <Link
+                    routes.map(route => <LinkRecap
                         key={route.id}
                         route={route}
-                    ></Link>)
+                    ></LinkRecap>)
                 }
             </ul>
         </nav>
     );
 };
 
-export default Navbar;
+export default NavbarRecap;

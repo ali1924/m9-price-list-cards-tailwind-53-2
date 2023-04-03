@@ -5,7 +5,7 @@ const Link = (props) => {
     // console.log(props.route);
     const {id,name,path}=props.route;
     return (
-        <li className="mr-12">
+        <li className="mr-12 hover:bg-purple-800">
             <a href={path}>{name}</a>
         </li>
     );
