@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const PhoneBar = () => {
     const [phones, setPhones] = useState([]);
@@ -22,14 +23,24 @@ const PhoneBar = () => {
                     }
                     return phoneInfo;
                 })
-                console.log(phoneData);
+                // console.log(phoneData);
+                setPhones(phoneData);
             });
     }, [])
 
     // console.log(phones);
     return (
         <div>
-
+            <BarChart
+                width={1000}
+                height={500}
+                data={phones}
+            >
+                <Bar dataKey="price" fill="#8884d8" />
+                <Tooltip></Tooltip>
+                <XAxis dataKey="name"></XAxis>
+                <YAxis dataKey="price"></YAxis>
+            </BarChart>
         </div>
     );
 };

@@ -21,7 +21,7 @@ function App() {
       </h1>
 
       <PriceList></PriceList>
-      {/* <Dashboard></Dashboard> */}
+      <Dashboard></Dashboard>
       <PhoneBar></PhoneBar>
 
     </div>
